@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="estilo.css">
+    <head>
+        <title>Página de projetos</title>
+    </head>
+    <body id="body">
+        <header>
+            <h1 id="title">Página de projetos</h1>
+            <img src="104525.jpg" alt="Cidade estrelada" class="imag">
+            <h2 class="subt">Essa será uma página para o desenvolver do curso DIO</h2>
+                <article class="texto">
+                    <h3>Falta muita coisa para aprender sobre HTML e CSS. Principalmente pois 
+                        parece que estou dando grandes saltos lógicos.</h3>
+                </article>
+        </header>
+        <footer> 
+            <div class="lnk"> <!-- Utilizei o list também -->
+                <div class="item"><a href="www.google.com" target="_blank">Google</a></div>
+                <div class="item"><a href="www.youtube.com" target="_blank" color: rgb(61, 68, 97);>YouTube</a></div>
+                <div class="item"><a href="https://github.com/KVCarvalho/">Meu GitHub</a></div>
+            </div>
+        </footer>
+           
+    </body>
+</html>
