@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body{
+    background-color:rgb(243, 243, 243);
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+#principal{
+    display: flex;
+    align-items:center;
+    width: 60%;
+    height: 100vh;
+    justify-content: start;
+}
+.imgcel{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cel{
+    width: 50rem;
+}
+.itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%; 
+    min-height: 34rem; 
+}
+.subitem1{
+    display:flex;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+.imguser{
+    height: 50px;
+    border-radius: 100%;
+}
+.subitem2{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: lightgray;
+    
+    
+}
+.subitem2 h1{
+   
+}
+.subitem2 h2{   
+
+}
+.link{
+    text-decoration: none;
+    color: #0095f6;
+}
+.subitem3{
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+}
+.getapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.getimg{
+    height: 3rem;
+    width: 10rem;
+}
