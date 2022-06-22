@@ -1,0 +1,15 @@
+.grupo{
+    display: flex;
+    background-color:gray;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.item{
+    background-color: brown;
+    color: aliceblue;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+}
