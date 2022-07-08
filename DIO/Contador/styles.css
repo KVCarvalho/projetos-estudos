@@ -18,14 +18,24 @@ body{
     border: 1px solid lightgray;
 }
 button{
+    display: flex;
     border-radius: 50%;
     background-color:aliceblue;
     width: 25px;
     height: 25px;
     font-size: 10px;
+    justify-content: center;
     align-items: center;
 }
 #currentNumber{
+    display: flex;
+    justify-content: center;
     padding: 0 10px;
     color: black;
+}
+.adicionar{
+    display: block;
+}
+.subtrair{
+    display: block;
 }
