@@ -29,7 +29,7 @@ int crescente(int j, int arrayc[],int elem) // Operação crescente
 
             crescente(j-1, arrayc, elem);
            }
-
+           
     return arrayc[elem];      
 }
 
