@@ -1,3 +1,10 @@
+// Programa que realiza busca binária em uma lista de números inteiros
+// Até então o mais complexo de ser feito, parte por não entender a lógica exata por trás do tipo de busca
+// Tópicos extras:
+// Loops / restart de algoritmos
+// Retornos de funções
+// Trabalho de lógica para busca
+
 #include <iostream>
 
 using std::cout;
@@ -6,7 +13,7 @@ using std::endl;
 
 int crescente(int[], int, int); // Ordena valores na lista
 void busca(int[], int); // Realiza busca binária
-void operacao(int[], int, int, int); // ^
+int operacao(int[], int, int); // ^
 bool rep0(); // Funções de re-uso do programa
 void rep(); // ^
 
@@ -53,63 +60,51 @@ int crescente(int array0[], int quant0, int j = 0) // Ordena valores na lista
 }
 void busca(int array1[], int quant1)
 {
-    int x;
+    int x, res;
 
     cout << "Qual valor deseja encontrar?" << endl;
     cin >> x;
 
-    operacao(array1, quant1, x, quant1-1);
+    res = operacao(array1, quant1, x);
 
-}
 
-void operacao(int array2[], int quant2, int a, int z)
-{
-    if (z > 1)
+    if (res != -1)
+    {   
+        cout << "O valor' " << x << "' está na lista na posição: " << res++ << endl;
+    } else
     {
-        if(z % 2 == 0)
-        {
-            z /= 2;
+        cout << "O valor '" << x << "' não está na lista" << endl;
+        }
 
-        }else
-            {
-                z = (z - 1) / 2;
-            }
-    }else if(z = 1)
-            {
-                z = 0;
-            } else
-                {
-                    z= -1;
-                }
-
-    if (z >= 0 && z < quant2)
-    {
-        if(array2[z] == a)
-            {
-                cout << "O valor '" << a << "' " << "Está na lista\n\nDeseja buscar novo valor?" << endl;
+    cout << "Deseja buscar novo valor?" << endl;
                 if (rep0())
                 {
-                    busca(array2, quant2);
+                    busca(array1, quant1);
                 }
+}
+
+int operacao(int array2[], int quant2, int a)
+{
+    int alto = quant2-1, baixo = 0, meio;
+    meio = (alto + baixo) / 2;
+
+    while (baixo <= alto)
+    {
+        if(array2[meio] == a)
+            {   
+                return meio;
                     
 
-        }else if (array2[z] < a)
-            {
-                z *= 3;
-                
-                operacao(array2, quant2, a, z);
+        }else if (array2[meio] < a)
+            {   
+                baixo = meio++;
 
-            }else
-                {
-                    operacao(array2, quant2, a, z);
+            }else if(array2[meio] > a)
+                {   
+                    alto = meio--;
                 }
-    } 
-    cout << "O valor' " << a << "' Não está na lista\nDeseja procurar outro valor? 1 - Sim 0 - Não" << endl;
-
-    if(rep0())
-    {
-        busca(array2, quant2);
-    }   
+    }
+    return -1;      
 }
 
 bool rep0()
