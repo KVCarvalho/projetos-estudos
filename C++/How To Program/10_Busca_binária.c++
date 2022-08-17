@@ -37,10 +37,6 @@ int main()
 
 int crescente(int array0[], int quant0, int j = 0) // Ordena valores na lista
 {   
-    /*int quant0 = quant2;*/
-
-    cout << "\nValor de quant0: " << quant0;
-
     for(j = 0; j < quant0; j++)
     {
         if(j != 0 && array0[j] < array0[j-1])
@@ -52,10 +48,6 @@ int crescente(int array0[], int quant0, int j = 0) // Ordena valores na lista
             crescente(array0, quant0, j);
         }
     }
-/*for(int k = 0; k < quant0; k++)
-            {
-                cout << " " << array0[k] << "";
-            }*/
 
     return array0[quant0];
 }
@@ -66,49 +58,58 @@ void busca(int array1[], int quant1)
     cout << "Qual valor deseja encontrar?" << endl;
     cin >> x;
 
-    operacao(array1, quant1, x, 0);
+    operacao(array1, quant1, x, quant1-1);
 
 }
 
-void operacao(int array2[], int quant2, int a, int z = 0)
+void operacao(int array2[], int quant2, int a, int z)
 {
-    if(quant2 % 2 == 0)
+    if (z > 1)
     {
-        z = quant2 / 2;
-
-    }else
+        if(z % 2 == 0)
         {
-            z = (quant2 - 1) / 2;
-        }
-    
-    if (z != 0 && z < quant2)
+            z /= 2;
+
+        }else
+            {
+                z = (z - 1) / 2;
+            }
+    }else if(z = 1)
+            {
+                z = 0;
+            } else
+                {
+                    z= -1;
+                }
+
+    if (z >= 0 && z < quant2)
     {
         if(array2[z] == a)
-        {
-            cout << "O valor '" << a << "' " << "Está na lista\nDeseja buscar novo valor?";
-            if (rep0() == true)
             {
-                busca(array2, quant2);
-            }
-                
+                cout << "O valor '" << a << "' " << "Está na lista\n\nDeseja buscar novo valor?" << endl;
+                if (rep0())
+                {
+                    busca(array2, quant2);
+                }
+                    
 
         }else if (array2[z] < a)
             {
                 z *= 3;
-
+                
                 operacao(array2, quant2, a, z);
 
             }else
                 {
                     operacao(array2, quant2, a, z);
                 }
-            
-    cout << "O valor' " << a << "' Não está na função\nDeseja procurar outro valor? 1 - Sim 0 - Não" << endl;
-        if(rep0() == true)
-        {
-            busca(array2, quant2);
-        }
-    }
+    } 
+    cout << "O valor' " << a << "' Não está na lista\nDeseja procurar outro valor? 1 - Sim 0 - Não" << endl;
+
+    if(rep0())
+    {
+        busca(array2, quant2);
+    }   
 }
 
 bool rep0()
