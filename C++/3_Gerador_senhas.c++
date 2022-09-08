@@ -11,7 +11,6 @@
 
 #include <iostream>
 #include <string>
-#include <cstdlib>
 
 
 using namespace std;
@@ -168,13 +167,11 @@ int main(){
 
     resultado = primeira_parte(palavra, p);
 
-    resultado.append(segunda_parte(palavra, p, s));
+    resultado += segunda_parte(palavra, p, s);
 
     cout << "Sua senha é: " << endl;
     
     cout << resultado << endl;
-
-    system("pause");   
     
     return 0;
 }
