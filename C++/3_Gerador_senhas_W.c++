@@ -18,6 +18,11 @@ using namespace std;
 
 const string alfabeto = " abcdefghijklmnopqrstuvwxyz";
 
+struct result {
+    char first;
+    int second;
+};
+
 string segunda_parte(const string palavra0, int p0, int s0){
     char array[s0]; // array que salvará a segunda parte da palavra a ser trabalhada
     int letra[s0], un = 0; // indicador de posição númerica no alfabeto
@@ -165,14 +170,33 @@ int main(){
         }
             break;
     }
+    result pass[s];
 
     resultado = primeira_parte(palavra, p);
 
-    resultado.append(segunda_parte(palavra, p, s));
+    for (int i = 0; i < p; i++)
+    {
+        pass[i].first = resultado[i];
+    }
+
+    resultado = segunda_parte(palavra, p, s);
+
+    for (int a = 0; a < s; a++)
+    {
+        pass[a].second = resultado[a];
+    }
 
     cout << "Sua senha é: " << endl;
     
-    cout << resultado << endl;
+    for (int b = 0; b < p; b++)
+    {
+        cout << pass[b].first;
+    }
+    for (int c = 0; c < s; c++)
+    {
+        cout << pass[c].second;
+    }
+
 
     system("pause");   
     
