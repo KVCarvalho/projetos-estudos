@@ -19,8 +19,8 @@ using namespace std;
 const string alfabeto = " abcdefghijklmnopqrstuvwxyz";
 
 void segunda_parte(int *array, const string palavra0, int p0, int s0){
+
     int letra[s0], un = 0; // indicador de posição númerica no alfabeto
-    string palavraf = "";
 
     for (int i = 0; i < s0; i++) // registro de cada endereço em seu respectivo espaço, processa a codificação para números
     {
@@ -54,10 +54,9 @@ void segunda_parte(int *array, const string palavra0, int p0, int s0){
 
             }
         }
-        
-        array[s0+i] = letra[i];
-        
+        array[i] = letra[i];
     }  
+
 }
 
 int *crescente(int *plet0[], int p1, int e = 1) // ordena indíces em ordem crescente
@@ -86,7 +85,7 @@ int *crescente(int *plet0[], int p1, int e = 1) // ordena indíces em ordem cres
     return plet0[p1];
 }
 
-void primeira_parte(char* array, const string palavra0, int p0) // processa a primeira parte da palavra
+void primeira_parte(char *array, const string palavra0, int p0) // processa a primeira parte da palavra
 {
     int letra[p0], *plet[p0]; // letra: responsável por contar quantas vezes se repete a palavra; plet: armazena endereços de letra
 
@@ -133,18 +132,12 @@ void primeira_parte(char* array, const string palavra0, int p0) // processa a pr
         {
             array[d] = toupper(array[d]);
         }
-    }  
-    /*
-    for (int i = 0; i < p0; i++)
-    {
-        cout << &array[i] << ": " << array[i] << endl;
-    }*/
-    
+    }     
 }
 
 int main(){
-    int fim = 0;
-    string user = "", resultado = ""; // user: entrada do usuário; resultado: palavra criptografada
+    
+    string user = ""; // user: entrada do usuário; resultado: palavra criptografada
 
     cout << "Digite a palavra a referência" << endl;
     getline(cin, user);
@@ -164,24 +157,25 @@ int main(){
         }
             break;
     }
-
     char rfir[p];
     int rsec[s];
 
-    
     primeira_parte(&rfir[0], palavra, p);
+
+    segunda_parte(&rsec[0], palavra, p, s);
+
+    cout << "Sua senha é: " << endl;
+    
     for (int i = 0; i < p; i++)
     {
         cout << rfir[i];
     }
-
-    segunda_parte(&rsec[0], palavra, p, s);
     for (int i = 0; i < s; i++)
     {
-        cout << rsec[p+i];
+        cout << rsec[i];
     }
-
-    //system("pause");   
+    
+    system("pause");
     
     return 0;
 }

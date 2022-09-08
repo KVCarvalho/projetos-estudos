@@ -1,2 +1,1 @@
-
-    cout << rfir[0];
+// indicador de posição númerica no alfabeto
