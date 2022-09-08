@@ -1,0 +1,231 @@
+*{
+    flex-basis: 100%;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+}
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: black;
+    height:100%;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+}
+/*Topo do site*/
+#upside{
+    align-items: center;
+    justify-content:space-between;
+    flex-basis: auto;
+    display: flex;
+    background-color: black;
+    height: 56px;
+    width: 100%;
+}
+/*Start*/
+#start{
+    display: flex;
+    flex-basis: content;
+    justify-content: left;
+    align-items: center;
+}
+#sidebtn{ 
+    display: flex;
+	background: black;
+	color: inherit;
+	padding-left: 16px;
+    flex-basis: auto;
+	font: inherit;
+    width: 40px;
+    height: 40px;
+}
+#btns{ 
+    border-radius: 50px;
+    display: flex;
+    flex-basis: auto;
+    width: 40px;
+    height: 40px;
+    background: black;
+
+}
+#lmain{
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: center;
+    background: black;
+	color: inherit;
+	border: none;
+	padding: 10;
+    margin: 0;
+	font: inherit; 
+    height: 56px;
+    width: 120px;
+
+}
+#logo{
+    display: flex;
+    flex-basis: auto;
+    height: 20px;
+    width: 90px;
+}
+/*Área de busca*/
+#searcharea{
+    display: flex;
+    align-content: center;
+    flex-basis: auto;
+    height: 40px;
+    width: 63%;
+    max-width: 696px;
+
+}
+#searcht{
+    display: flex;
+    flex-basis: auto;
+    max-width: 612px;
+    width: 100%;
+    border-radius: 40px;
+}
+#vdsearch{
+    display: flex;
+    max-width: 540px;
+    width:90%;
+
+}
+#btnsearch{
+    display:flex;
+    flex-basis: auto;
+    height: 40px;
+    width: 40px;
+}
+/*Área do usuário*/
+#userarea{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-basis: auto;
+    width: 173px;
+    height: 40px;
+    
+
+}
+#notificationb{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    flex-basis: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-left: 20px;
+}
+#userconfig{
+    display: flex;
+    flex-basis: auto;
+    border-radius: 100px;
+    padding: 0;
+    height: 32px;
+    width: 32px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-right: 16px;
+}
+/*Site*/
+#botside{
+    flex-basis: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+}
+/*Side menu*/
+#menu{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    flex-basis: auto;
+    width: 4%;
+    min-width: 64px;
+}
+.sidemenubts{
+    display: block;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 74px;
+    width: 100%;
+    background-color: black;
+  
+}
+.sidemenulnk{
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    border-radius: 5px;
+    height: 74px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.sidemenusvg{
+    display:flex; 
+    flex-basis:auto; 
+    height: 22px; 
+    width: 22px; 
+    fill:white; 
+    justify-content:center;
+    margin-bottom: 5px;
+}
+.icontext{
+    display: block; 
+    flex-basis: auto; 
+    height: 22px; 
+    text-align: center;
+}
+/*Barra superior*/
+#upbar{
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 5.5%;
+}
+/*Área de vídeos*/
+.videosarea{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 20p;
+    height: 75%;
+    width: 95.9%;
+    padding: 24px 2.05%;
+}
+.videomain{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 15px;
+    border-color: aliceblue;
+    width: 94%;
+    min-width: 53,7%;
+    height: 84%;
+}
+.videothumb{
+    display: block;
+    flex-basis: auto;
+    border-radius: 15px;
+    height: 80%;
+    margin-bottom: 9px;
+    
+}
+.icontextv{
+    display: block; 
+    flex-basis: auto; 
+    height: 22px; 
+    text-align: start;
+}

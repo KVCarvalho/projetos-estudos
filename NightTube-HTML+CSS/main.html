@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightTube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Topo do site-->
+    <div id="upside"> 
+        <!--Start-->
+        <div id="start">
+            <div id="sidebtn">
+                <button type="button" id="btns"> <svg id="search-icon" class="search-icon" viewBox="0 0 24 24">
+                    <path d="M 21 6 H 3 V 5 h 18 V 6 Z M 21 11 H 3 v 1 h 18 V 11 Z M 21 17 H 3 v 1 h 18 V 17 Z" fill="white"></path>;
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    </svg>
+                </button>
+            </div>
+            <a href="http://www.youtube.com" id="lmain"> <img src="img/logo.png" alt="LOGO" id="logo"></a>
+        </div>
+        <!--Área de busca-->
+        <div id="searcharea">
+            <div id="searcht">
+                <input type="search" name="videosch" id="vdsearch" placeholder="Pesquisar">
+            <button type="submit" id="btnsearch"><!--falta arrumar-->
+                <svg>
+                    <path d="M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z"></path>
+                </svg>
+            </button>
+            </div>
+        </div>
+        <!--Área do usuário-->
+        <div id="userarea">
+            <a href="www.upload.com" style="flex-basis: auto; width: 24px; height: 24px">
+                <svg id="uploadb" style="fill: white; flex-basis: auto; width: 24px; height: 24px">
+                    <path d="M17 18v1H6v-1ZM6.49 9l.71.71 3.8-3.8V16h1V5.91l3.8 3.81.71-.72-5-5Z"></path>
+                </svg>
+            </a>
+            <button type="button" id="notificationb"><!--arrumar!-->
+                <svg style="fill: white; height: 24px">
+                    <path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path>
+                </svg>
+            </button>
+            <button type="button" id="userconfig">
+                <img src="img/user.jpg" alt="usuário" style="border-radius: 100px; height: 32px; width: 32px;">
+            </button>
+        </div>
+    </div>
+    <!--Site-->
+    <div id="botside">
+        <!--Menu lateral-->
+        <div id="menu">
+            <div class="sidemenubts">
+                <a href="http://" class="sidemenulnk">
+                    <svg class="sidemenusvg">
+                        <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path>    
+                    </svg>
+
+                    <span class="icontext">Início</span>
+                </a>
+            </div>
+            <div class="sidemenubts">
+                <a href="http://" class="sidemenulnk">
+                    <svg class="sidemenusvg">
+                        <path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path>
+                    </svg>
+                    <span class="icontext">Shorts</span>
+                </a>
+            </div>
+            <div class="sidemenubts">
+                <a href="http://" class="sidemenulnk">
+                    <svg class="sidemenusvg">
+                       <path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path> 
+                    </svg>
+                    <span class="icontext">Inscrições</span>
+                </a>
+            </div>
+            <div class="sidemenubts" >
+                <a href="http://" class="sidemenulnk">
+                    <svg class="sidemenusvg">
+                        <path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path>
+                    </svg>
+                    <span class="icontext">Biblioteca</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <!--Barra de seleção superior-->
+            <div id="upbar">
+                <span style="display: block; text-align:center;">Barra superior!</span>
+            </div>
+            <!--Vídeos-->
+            <div class="videosarea">
+                <a href="http://" class="videomain">
+                    <img src="img/tb.jpg" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="img/tb.jpg" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="img/tb.jpg" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="img/tb1.jpg" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="img/tb1.jpg" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>           
+            </div>
+            <div class="videosarea">
+                <a href="http://" class="videomain">
+                    <img src="" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>
+                <a href="http://" class="videomain">
+                    <img src="" alt="" class="videothumb">
+                    <span class="icontextv">TítuloV</span>
+                </a>           
+            </div>
+        </div>
+    </div>
+</body>
+</html>
