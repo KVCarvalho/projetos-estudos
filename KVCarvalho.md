@@ -9,7 +9,7 @@ I'm a student at computer science attending the second-year of the curse.
 ![CSS](https://img.shields.io/badge/CSS-blue)
 ![TS/JS](https://img.shields.io/badge/TypeScript-yellow)
 ![JAVA](https://img.shields.io/badge/Java-darkblue)
-[[C/C++](https://img.shields.io/badge/C-darkgreen)
+![C/C++](https://img.shields.io/badge/C-darkgreen)
 ![SQL](https://img.shields.io/badge/SQL-orange)
 
 ### Soft Skills
