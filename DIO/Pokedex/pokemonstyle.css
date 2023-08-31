@@ -1,0 +1,20 @@
+.type{
+    display: flex;
+    width: 40px;
+    height: 15px; 
+    background-color: #ee7f30;
+    filter: brightness(1.1);
+    font-size: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-right: 5px;
+    text-transform: capitalize;
+}
+#pokemonimg{
+    display: block;
+    height: 125px;
+    width: 125px;
+    padding: 0 30px;
+    
+}
