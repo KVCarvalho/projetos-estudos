@@ -4,3 +4,4 @@
 ## Contador: Primeiro desafio do Bootcamp de JavaScript.
 ## DesafioTS: Entrega dos desafios do módulo de JavaScript da DIO.
 ## Pokedex: Criação de card de status de Pokemon.
+## CriandoComponente: Projeto voltando para o aprendizado do funcionamento de um componente
