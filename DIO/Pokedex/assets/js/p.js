@@ -1,5 +1,5 @@
-export function convertPokemonHtml(pokemonhtml) {
-    console.log(pokemonhtml);
+function convertPokemonHtml(pokemonhtml) {
+    console.log(pokemonhtml)
     return `<div style="display: flex; justify-content: space-between;">
                 <div id="pokecore">
                     <span id="name" style="font-weight: 500; text-transform: capitalize;">${pokemonhtml.name}</span>
@@ -12,10 +12,11 @@ export function convertPokemonHtml(pokemonhtml) {
                 <span id="pokenumber" style="width: 50px; padding-top: 10px; font-size: 15px;">#${pokemonhtml.id}</span>
             </div>
             <img id="pokemonimg" src="${pokemonhtml.sprites.other.dream_world.front_default}" alt="${pokemonhtml.name}">
-            `;
+            `
+
 }
-export function convertStatusHtml(pokemonstatus) {
-    return `<table>
+function convertStatusHtml(pokemonstatus) {
+        return `<table>
                     <tr>
                         <td>Base EXP</td>
                         <td class="td1">${pokemonstatus.base_experience}</td>
@@ -33,9 +34,9 @@ export function convertStatusHtml(pokemonstatus) {
                         <td class="td1">${pokemonstatus.abilities[0].ability.name}, ${pokemonstatus.abilities[1].ability.name}</td>
                     </tr>
                 </table>
-                `;
+                `
 }
-export function convertStatusHtml0(pokemonstatusgame) {
+function convertStatusHtml0(pokemonstatusgame) {
     //console.log(pokemonstatusgame);
     return `<table>
                 <caption>Games</caption>
@@ -53,5 +54,6 @@ export function convertStatusHtml0(pokemonstatusgame) {
                     <td class="td1">${pokemonstatusgame.regions[0].name}</td>
                 </tr>
             </table>
-            `;
+            `
+    
 }
