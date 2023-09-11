@@ -1,4 +1,4 @@
-export function convertPokemonHtml(pokemonhtml) {
+export function convertPokemonHtml(pokemonhtml: any) {
     console.log(pokemonhtml)
     return `<div style="display: flex; justify-content: space-between;">
                 <div id="pokecore">
@@ -15,7 +15,7 @@ export function convertPokemonHtml(pokemonhtml) {
             `
 
 }
-export function convertStatusHtml(pokemonstatus) {
+export function convertStatusHtml(pokemonstatus: any) {
         return `<table>
                     <tr>
                         <td>Base EXP</td>
@@ -36,7 +36,7 @@ export function convertStatusHtml(pokemonstatus) {
                 </table>
                 `
 }
-export function convertStatusHtml0(pokemonstatusgame) {
+export function convertStatusHtml0(pokemonstatusgame: any) {
     //console.log(pokemonstatusgame);
     return `<table>
                 <caption>Games</caption>

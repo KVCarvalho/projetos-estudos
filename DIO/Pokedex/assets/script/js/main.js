@@ -9,7 +9,7 @@ fetch(url0)
     const nulo = convertStatusHtml(jsonBody);
     if (nulo !== null) {
         pokestatusjs.innerHTML += nulo;
-    }
+    } // Erro 204 para resposta ser nulo
     const nulo0 = convertPokemonHtml(jsonBody);
     if (nulo0 !== null) {
         cardcore.innerHTML += nulo0;
