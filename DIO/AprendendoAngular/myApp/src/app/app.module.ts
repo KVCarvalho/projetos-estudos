@@ -1,22 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from "@angular/forms";
+import { ListaModule } from "./lista/lista.module";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NewComponent } from "./components/new.component";
-import { ButtonMenu } from "./components/button.component";
-import { NovoComponente } from "./components/novo.component";
+
+
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { SpageComponent } from './spage/spage.component';
+import { DiratributosComponent } from './diratributos/diratributos.component';
 
 @NgModule({
-  declarations: [
+  declarations: [ //Set de componentes, diretivas e pipes
     AppComponent,
-    NewComponent,
-    ButtonMenu,
-    NovoComponente,
+    LifeCycleComponent,
+    SpageComponent,
+    DiratributosComponent,
   ],
-  imports: [
+  imports: [ //Set de NgModules
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ListaModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

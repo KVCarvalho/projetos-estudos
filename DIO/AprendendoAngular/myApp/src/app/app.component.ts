@@ -7,5 +7,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myApp';
-  buttonLabel: string = 'Carrinho';
+/* LIFE CYCLE
+  isAliveLyfeCicle: boolean = true;
+
+  killit(){
+    if (this.isAliveLyfeCicle === true) {
+      this.isAliveLyfeCicle = false;
+    } else{
+      this.isAliveLyfeCicle =true;
+    }
+  }*/
+  /*
+  isAliveSPage: boolean = true;
+
+  isalive (state: boolean = true){
+    if (state !== true) {
+      this.isAliveSPage = true;
+    } else {
+      this.isAliveSPage = false;
+    }
+  }*/
 }
