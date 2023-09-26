@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { SpageComponent } from './spage/spage.component';
 import { DiratributosComponent } from './diratributos/diratributos.component';
+import { TesteComponent } from './teste/teste.component';
 
 @NgModule({
   declarations: [ //Set de componentes, diretivas e pipes
@@ -17,6 +18,7 @@ import { DiratributosComponent } from './diratributos/diratributos.component';
     LifeCycleComponent,
     SpageComponent,
     DiratributosComponent,
+    TesteComponent,
   ],
   imports: [ //Set de NgModules
     BrowserModule,
@@ -24,7 +26,7 @@ import { DiratributosComponent } from './diratributos/diratributos.component';
     FormsModule,
     ListaModule,
   ],
-  providers: [],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
