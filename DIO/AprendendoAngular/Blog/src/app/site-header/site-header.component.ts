@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./site-header.component.css']
 })
 export class SiteHeaderComponent {
-
+  logo: String = "../../assets/images/logoafth.png"
+  nomesite: String = "../../assets/images/afth.png";
 }

@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { MainAreaComponent } from './main-area/main-area.component';
 import { SiteHeaderComponent } from './site-header/site-header.component';
-import { MainCardComponent } from './main-card/main-card.component';
+import { PostComponent } from './pages/post/post.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PostAreaComponent } from './post-area/post-area.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { MainCardComponent } from './main-card/main-card.component';
     SideBarComponent,
     MainAreaComponent,
     SiteHeaderComponent,
-    MainCardComponent
+    PostComponent,
+    HomeComponent,
+    PostAreaComponent,
   ],
   imports: [
     BrowserModule,

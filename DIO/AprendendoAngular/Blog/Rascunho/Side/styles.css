@@ -1,15 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+html{
+    background: white;
+}
 body{
     border: 3px double black;
-    background: #AAA9AD;
+    background: gray;
     padding: 1vh 1vw;
     width: 8.5vw;
     height: 60vh;
     font-size: 1vh;
-    color: black;
 }
 h1{
     margin: 0.5vh 0 0.5vh 0.5vw;
-    color: black;
 }
 li{
     display: flex;
@@ -22,16 +28,12 @@ li{
     margin-bottom: 1vh;
     font-size: 1.6vh;
 }
-a{
-    text-align: center;
-}
-img{
+li img{
     width: 5vw;
     border: 1px solid gray;
     border-radius: 15px;
 }
-span{
-    color: black;
+li span{
     text-align: center;
     margin-top: 0.5vh;
 }

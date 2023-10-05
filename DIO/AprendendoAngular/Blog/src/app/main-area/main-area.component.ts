@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-main-area',
@@ -7,7 +7,19 @@ import { Component } from '@angular/core';
 })
 export class MainAreaComponent {
   cards: number[] = [];
+
+  @Input()
+  noticemainimg: String = "";
+  @Input()
+  noticetitle: String = "";
+  @Input()
+  shortnotice: String = ""
+  @Input()
+  noticedate: String = "";
+  @Input()
+  identifier: number = 0;
+  
   constructor(){
-    this.cards = [0]
+    this.cards = [0, 1, 2, 3]
   }
 }
