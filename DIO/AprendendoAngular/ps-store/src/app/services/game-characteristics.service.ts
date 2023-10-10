@@ -1,19 +1,18 @@
 import { Injectable } from '@angular/core';
 import { dataFake } from "../../dataFake/dataFake";
-import { environment } from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class GameCharacteristicsService {
-  
+  identifier: number = 0; // Substituição de variável de environment por variável local
   constructor() {}
 
-  getGameInfo(identifier:number){
-    return dataFake[identifier];
+  getGameInfo(){
+    return dataFake[this.identifier];
   }
   beIdentificator(){
-    environment.identifier++;
+    this.identifier++;
   }
   
 }

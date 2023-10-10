@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { GameCharacteristicsService } from "../../services/game-characteristics.service";
-import { environment } from "../../../environments/environment";
 
 @Component({
   selector: 'app-game-card',
@@ -18,7 +17,7 @@ export class GameCardComponent{
 
 
   constructor(private service: GameCharacteristicsService){
-    const gameInfo = this.service.getGameInfo(environment.identifier);
+    const gameInfo = this.service.getGameInfo();
     this.coverImg = gameInfo.coverImg;
     this.isExclusive = gameInfo.isExclusive;
     this.buyOrPlay = gameInfo.buyOrPlay;
