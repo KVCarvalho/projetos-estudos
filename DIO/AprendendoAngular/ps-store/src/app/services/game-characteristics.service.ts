@@ -5,7 +5,7 @@ import { dataFake } from "../../dataFake/dataFake";
   providedIn: 'root'
 })
 export class GameCharacteristicsService {
-  identifier: number = 0; // Substituição de variável de environment por variável local
+  private identifier: number = 0; // Substituição de variável de environment por variável local
   constructor() {}
 
   getGameInfo(){
