@@ -2,7 +2,7 @@
 Java Restful criada como projeto final da Dev Week Santander
 
 ## Diagrama de classes
-´´´mermaid
+```mermaid
 classDiagram
   class User {
     - String name
@@ -30,4 +30,4 @@ classDiagram
   User --> Acoes
   InvestimentoBase <|-- FundoImobiliario
   InvestimentoBase <|-- Acoes
-´´´
+```
