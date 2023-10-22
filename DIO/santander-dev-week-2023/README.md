@@ -1,4 +1,4 @@
-#Santander Dev Week 2023
+# Santander Dev Week 2023
 Java Restful criada como projeto final da Dev Week Santander
 
 ## Diagrama de classes
@@ -6,18 +6,11 @@ Java Restful criada como projeto final da Dev Week Santander
 classDiagram
   class User {
     - String name
-    - InvestimentoBase investimentoBase
-  }
-
-  class InvestimentoBase {
-    - String nome
-    - String codigo
-    - String tipo
-    - String retorno
     - List<FundoImobiliario> fundoImobiliario
     - List<Acoes> acoes
   }
 
+ 
   class FundoImobiliario {
     - String pvp
   }
@@ -25,6 +18,14 @@ classDiagram
   class Acoes {
     - String ppl
   }
+
+ class InvestimentoBase {
+    - String nome
+    - String codigo
+    - String tipo
+    - String retorno
+  }
+
 
   User --> FundoImobiliario
   User --> Acoes
