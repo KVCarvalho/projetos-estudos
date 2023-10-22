@@ -1,4 +1,3 @@
-package aplicativos;
 import interfaces.musicas;
 
 public class ReprodutorMusical implements musicas {
