@@ -1,0 +1,27 @@
+h1{
+    margin-top: -5vh;
+}
+#agents{
+    list-style: none;
+    display: flex;
+    margin: 0vh 0 2vw 0.5vw;
+    justify-content: space-evenly;
+    
+}
+
+#strats{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10vh 0 0 0;
+    border-top: 2px solid #ff4655;
+    padding-top: 10vh;
+}
+#strats > li{
+    font-size: 3vh;
+    width: 33vw;
+}
+
+    #strats > :not( :nth-child(3)){
+        border-right: 2px solid #ff4655;
+    }

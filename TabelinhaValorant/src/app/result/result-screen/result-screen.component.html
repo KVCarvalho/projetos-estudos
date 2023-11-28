@@ -1,0 +1,15 @@
+
+<ul id="agents">
+    <li 
+    *ngFor="let p of agent; let i = index"
+    >
+    <app-result-card></app-result-card>
+    </li>
+</ul>
+<ul id="strats">
+    <li
+    *ngFor="let p of strat; let i = index"
+    > 
+    {{ p }}
+    </li>
+</ul>

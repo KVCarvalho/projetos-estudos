@@ -1,0 +1,40 @@
+#background{
+    background: radial-gradient(circle, #ffce6fff, #7b4d21ff,#372d2bff,#163555ff);
+    width: 17vw;
+    height: 55vh; 
+}
+#card{
+    display: flex;
+    background-image: url(../../../assets/backgroundChamber.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17vw;
+    height: 55vh; 
+    border: 1px solid #ff4655;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 1vh;
+}
+
+#card > :nth-child(1){
+    width: 35px;
+    height: 35px;
+}
+#card > :nth-child(2){
+    width: 430px;
+    margin-top: -2vh;
+}
+
+#botside {
+    width: 100%;
+    text-align: center;
+}
+#botside > :nth-child(1){
+    width: 180px;
+    
+}
+#botside > :nth-child(2){
+    width: 65px;
+    margin-left: 0.5vw;
+}
