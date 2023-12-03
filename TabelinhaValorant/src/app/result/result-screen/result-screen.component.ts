@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { ApiConsumeService } from 'src/app/api-consume.service';
+import { ApiConsumeService } from 'src/app/service/api-consume.service';
+import { CoreRandomizerService } from 'src/app/service/randomizer/core-randomizer.service';
+import { StratRandomizerService } from 'src/app/service/randomizer/strat-randomizer.service';
+import { choosen } from 'src/environments/interfaces/choosen';
 
 @Component({
   selector: 'app-result-screen',
@@ -7,9 +10,15 @@ import { ApiConsumeService } from 'src/app/api-consume.service';
   styleUrls: ['./result-screen.component.css']
 })
 export class ResultScreenComponent {
-  agent: Number[] = [0, 1, 2]
-  strat: String[] = ["Troll AIM", "Sem Ultimate", "Foguete não tem ré"]
-  constructor(private ApiConsume: ApiConsumeService){
-    //console.log(this.ApiConsume.consume(false));
+  stratList: String[] = []
+  choosenList: choosen[]=[];
+
+  constructor(private apiConsume: ApiConsumeService, private coreRandomizer: CoreRandomizerService, private stratRandomizer: StratRandomizerService){
+    this.apiConsume.consumeAPI(true);
+    this.apiConsume.consumeAPI(false);
+    
+    this.choosenList = this.coreRandomizer.randomizer();
+    this.stratList = this.stratRandomizer.randomizer();
+
   }
 }
